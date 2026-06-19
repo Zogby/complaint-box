@@ -5,11 +5,26 @@ publish = "dist/public"
 
 [functions]
 node_bundler = "nft"
+external_node_modules = [
+  "drizzle-orm",
+  "mysql2",
+  "serverless-http",
+  "express",
+  "@trpc/server",
+  "superjson",
+  "cookie",
+  "jose",
+  "zod"
+]
 included_files = [
-  "node_modules/drizzle-orm/**",
-  "node_modules/mysql2/**",
-  "node_modules/.pnpm/drizzle-orm*/node_modules/drizzle-orm/**",
-  "node_modules/.pnpm/mysql2*/node_modules/mysql2/**"
+  "node_modules/.pnpm/**/node_modules/drizzle-orm/**",
+  "node_modules/.pnpm/**/node_modules/mysql2/**",
+  "node_modules/.pnpm/**/node_modules/serverless-http/**",
+  "node_modules/.pnpm/**/node_modules/@trpc/server/**",
+  "node_modules/.pnpm/**/node_modules/superjson/**",
+  "node_modules/.pnpm/**/node_modules/cookie/**",
+  "node_modules/.pnpm/**/node_modules/jose/**",
+  "node_modules/.pnpm/**/node_modules/zod/**"
 ]
 
 [[redirects]]
