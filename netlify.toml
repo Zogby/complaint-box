@@ -5,6 +5,15 @@ publish = "dist/public"
 
 [functions]
 node_bundler = "nft"
+external_node_modules = [
+  "drizzle-orm",
+  "mysql2",
+  "superjson",
+  "@trpc/server",
+  "cookie",
+  "jose",
+  "serverless-http"
+]
 
 [[redirects]]
 from = "/api/*"
