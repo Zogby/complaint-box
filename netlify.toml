@@ -1,0 +1,24 @@
+[build]
+command = "pnpm netlify:build"
+functions = "dist"
+publish = "dist/public"
+
+[functions]
+node_bundler = "esbuild"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/index/:splat"
+status = 200
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[context.production]
+environment = { NODE_ENV = "production" }
+
+[dev]
+command = "pnpm dev"
+port = 3000

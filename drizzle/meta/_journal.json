@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1781900500248,
+      "tag": "0000_wise_jetstream",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1781900620862,
+      "tag": "0001_gorgeous_gladiator",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1781903193755,
+      "tag": "0002_yielding_earthquake",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1781904112395,
+      "tag": "0003_secure_admin_and_statistics_seed",
+      "breakpoints": true
+    }
+  ]
+}
